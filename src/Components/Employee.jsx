@@ -27,9 +27,9 @@ const Employee = () => {
     }
     const Remove = (id) => {
         console.log(empList);
-        var newList = empList.filter((emp)=> emp.id !== id);
-        // var newList = [...empList];
-        // newList.splice(id, 1);
+        // var newList = empList.filter((emp)=> emp.id !== id);
+        var newList = [...empList];
+        newList.splice(id, 1);
         setEmpList(newList);
     }
 
@@ -76,7 +76,7 @@ const Employee = () => {
                                             <td>{curEmp.empName}</td>
                                             <td>{curEmp.empDesignation}</td>
                                             <td>{curEmp.empSalary}</td>
-                                            <td><button onClick={() => Remove(curEmp.id)}>Delete</button></td>
+                                            <td><button onClick={() => Remove(idx)}>Delete</button></td>
                                         </tbody>
                                     }
                                 </div>
