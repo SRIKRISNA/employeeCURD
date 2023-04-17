@@ -1,8 +1,16 @@
 input, button{
     padding: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 button{
     border-radius: 5px;
     outline: 0;
+    border: none;
+}
+th, td{
+    border: 1px solid gray;
+}
+th, td{
+    width: 150px;
 }
